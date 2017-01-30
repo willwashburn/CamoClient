@@ -6,10 +6,9 @@ php:
   - '5.6'
   - '7.0'
   - hhvm
-  - nightly
 
 install:
-  - composer require satooshi/php-coveralls:~0.6@stable
+  - composer require satooshi/php-coveralls:~1.0.1
 
 before_script:
   - composer self-update
