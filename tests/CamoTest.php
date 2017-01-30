@@ -100,7 +100,7 @@ class ProxyUrlTest extends PHPUnit_Framework_TestCase
 
     public function test_key_sanity_checks() {
 
-        $this->setExpectedException(Exception::class);
+        $this->setExpectedException('Exception');
 
         $phpamo = new \WillWashburn\Phpamo\Phpamo(null, null);
 
@@ -109,7 +109,7 @@ class ProxyUrlTest extends PHPUnit_Framework_TestCase
 
     public function test_domain_sanity_checks() {
 
-        $this->setExpectedException(Exception::class);
+        $this->setExpectedException('Exception');
 
         $phpamo = new \WillWashburn\Phpamo\Phpamo('somekeythatisuniquneandstufflikethat', null);
     }
